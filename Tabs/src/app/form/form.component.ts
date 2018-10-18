@@ -8,7 +8,9 @@ import { FormControl } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
   public result = "";
-
+  public name = "";
+  public surname = "";
+  public age = "";
   constructor() { }
 
   ngOnInit() {
@@ -17,7 +19,7 @@ export class FormComponent implements OnInit {
   onClick(){
 
     this.result = this.name + " " + this.surname + " tiene " + this.age + " años.";
-    
+
   }
 
 }
