@@ -28,7 +28,7 @@ export class ListComponent implements OnInit {
 
   }
 
-  async presentModal(i:int) {
+  async presentModal(i) {
     const modal = await this.modalCtrl.create({
       component: ImgViewComponent,
       componentProps: { pokemon: this.pokemonList[i] }
@@ -36,15 +36,15 @@ export class ListComponent implements OnInit {
     return await modal.present();
   }
 
-  pushImage(i:int){
-    // push another page onto the navigation stack
-    // causing the nav controller to transition to the new page
-    // optional data can also be passed to the pushed page.
-    // this.navCtrl.push(img-view, {
-    //   name: this.pokemonList[i],
-    //   img: this.pokemonList[i]
-    // });
-  }
+  // pushImage(i){
+  //   // push another page onto the navigation stack
+  //   // causing the nav controller to transition to the new page
+  //   // optional data can also be passed to the pushed page.
+  //   // this.navCtrl.push(img-view, {
+  //   //   name: this.pokemonList[i],
+  //   //   img: this.pokemonList[i]
+  //   // });
+  // }
 
   ngOnInit() {
   }

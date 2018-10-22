@@ -10,7 +10,7 @@ import { NavController,ModalController, NavParams } from '@ionic/angular';
 export class ImgViewComponent implements OnInit {
 
   @Input() nombrePokemon: any;
-  @Input() imgenPokemon: any;
+  @Input() imagenPokemon: any;
 
   constructor(private nav:NavController, private modalCtrl:ModalController, private np:NavParams) {
     this.nombrePokemon = np.get('pokemon')[0];

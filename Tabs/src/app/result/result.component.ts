@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { NavParams } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-result',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 
-  constructor() { }
+  @Input() usrs: any;
+
+  constructor(private np: NavParams) {
+
+    this.usrs = np.get('users');
+
+  }
 
   ngOnInit() {
   }

@@ -8,13 +8,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ImgViewModule } from './img-view/img-view.module'
-import { ImgViewComponent } from './img-view/img-view.component'
+import { ImgViewModule } from './img-view/img-view.module';
+import { ImgViewComponent } from './img-view/img-view.component';
+import { ResultModule } from './result/result.module';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [ImgViewComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ImgViewModule],
+  entryComponents: [ImgViewComponent, ResultComponent],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ImgViewModule, ResultModule],
   providers: [
     StatusBar,
     SplashScreen,
